@@ -1,0 +1,27 @@
+{
+  "task_status": "needs_input",
+  "reason": "missing_information",
+  "message": "信息不足，请补充缺失项。",
+  "material_id": "M02",
+  "request_id": "eval-missing_info",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": null,
+  "audit_status": "incomplete",
+  "risks": [],
+  "missing_fields": [
+    "rights_status"
+  ],
+  "pending_confirmations": [],
+  "save_status": "not_attempted",
+  "draft_id": null,
+  "validation_scope": null,
+  "error": null,
+  "model_proposed_status": "needs_input",
+  "status_corrected": false,
+  "run_id": "b445b98afd894ef1a0b981de2075049e",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 3,
+  "tool_calls": 3,
+  "trace_path": "examples/real/deepseek-run-02/missing_info/trace-1.jsonl"
+}

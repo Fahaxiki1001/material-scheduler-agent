@@ -1,0 +1,16 @@
+[
+  {
+    "draft_id": "D-bdc18d857fd9",
+    "request_id": "eval-normal",
+    "material_id": "M01",
+    "intent_hash": "6583e1647728a1d3e5833b42a7bd6465c635c59452bc9f7ca5c5045179838bee",
+    "payload_hash": "eeba4ccd4508ed6fb1ea432c62c0a68af21fc4889bd309abc91ffbcc77fec92f",
+    "channel": "douyin",
+    "start_at": "2026-10-29T19:00:00+08:00",
+    "end_at": "2026-10-29T19:30:00+08:00",
+    "material_version": "M01-v1",
+    "rules_version": "rules-v1",
+    "audit_json": "{\"audit_status\": \"pass\", \"risks\": [], \"missing_fields\": [], \"requires_confirmation\": false, \"material_version\": \"M01-v1\", \"rules_version\": \"rules-v1\"}",
+    "created_at": "2026-10-28T05:10:36.970459+00:00"
+  }
+]

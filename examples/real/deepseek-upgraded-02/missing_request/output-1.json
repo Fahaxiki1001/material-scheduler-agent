@@ -1,0 +1,37 @@
+{
+  "task_status": "needs_input",
+  "reason": "missing_information",
+  "message": "信息不足，请补充缺失项。",
+  "material_id": "M01",
+  "request_id": "eval-missing_request",
+  "requested_start": null,
+  "suggested_slot": null,
+  "audit_status": "unknown",
+  "risks": [],
+  "missing_fields": [
+    "requested_start"
+  ],
+  "pending_confirmations": [],
+  "save_status": "not_attempted",
+  "save_error": null,
+  "draft_id": null,
+  "validation_scope": null,
+  "error": null,
+  "model_proposed_status": "needs_input",
+  "status_corrected": false,
+  "run_id": "2947e58a24ea4461a9a4a94429dca300",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 0,
+  "tool_calls": 0,
+  "trace_path": "examples/real/deepseek-upgraded-02/missing_request/trace-1.jsonl",
+  "finish_rejections": 0,
+  "token_usage": null,
+  "provenance": {
+    "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+    "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+    "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+    "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+    "python_version": "3.12.10"
+  }
+}

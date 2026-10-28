@@ -1,0 +1,31 @@
+{
+  "task_status": "blocked",
+  "reason": "rule_blocked",
+  "message": "当前约束或规则阻止排期。",
+  "material_id": "M03",
+  "request_id": "eval-blocked_rule",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": null,
+  "audit_status": "blocked",
+  "risks": [
+    {
+      "rule_id": "R01",
+      "reason": "素材授权已经到期，禁止排期",
+      "level": "blocked"
+    }
+  ],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "not_attempted",
+  "draft_id": null,
+  "validation_scope": null,
+  "error": null,
+  "model_proposed_status": "blocked",
+  "status_corrected": false,
+  "run_id": "dc01b89aa1fc4e139d32035ce0a37110",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 3,
+  "tool_calls": 3,
+  "trace_path": "examples/real/deepseek-run-01/blocked_rule/trace-1.jsonl"
+}

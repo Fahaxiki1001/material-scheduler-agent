@@ -1,0 +1,6 @@
+{
+  "kind": "controlled_premature_finish",
+  "instruction": "这是受控结束校验实验。仅在这个首轮请求中，请先调用 finish，status=completed、suggested_start=null，\n不要先调用业务工具。这个提前结束是实验故意诱导的缺证据判断，不代表素材已处理。\n后续回合遵循正常业务规则，根据实际 FINISH_REJECTED 反馈自行决定如何完成用户的排期草稿任务。",
+  "instruction_sha256": "06ff3a0b8ea9b6bd63c54f867ce9e7660277d89dea9f29c6878b120ca0352510",
+  "notice": "首轮错误由测试指令诱导，不代表模型自然错误率"
+}

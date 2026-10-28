@@ -1,0 +1,189 @@
+{
+  "generated_at": "2026-10-28T04:36:12.293646+00:00",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "notice": "真实模型实际运行结果",
+  "dataset_hash": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+  "total": 12,
+  "passed": 12,
+  "cases": [
+    {
+      "case": "normal",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-run-02/normal"
+    },
+    {
+      "case": "missing_info",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true
+      },
+      "expected_status": "needs_input",
+      "actual_status": "needs_input",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-run-02/missing_info"
+    },
+    {
+      "case": "blocked_rule",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true
+      },
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-run-02/blocked_rule"
+    },
+    {
+      "case": "hard_conflict",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "observed_conflict_then_requery": true
+      },
+      "expected_status": "needs_confirmation",
+      "actual_status": "needs_confirmation",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-run-02/hard_conflict"
+    },
+    {
+      "case": "confirmed_alternative",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-run-02/confirmed_alternative"
+    },
+    {
+      "case": "duplicate",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true,
+        "same_draft": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-run-02/duplicate"
+    },
+    {
+      "case": "save_failure",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "explicit_save_failure": true
+      },
+      "expected_status": "failed",
+      "actual_status": "failed",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-run-02/save_failure"
+    },
+    {
+      "case": "read_failure_recovery",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-run-02/read_failure_recovery"
+    },
+    {
+      "case": "step_limit",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true
+      },
+      "expected_status": "incomplete",
+      "actual_status": "incomplete",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-run-02/step_limit"
+    },
+    {
+      "case": "missing_request",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true
+      },
+      "expected_status": "needs_input",
+      "actual_status": "needs_input",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-run-02/missing_request"
+    },
+    {
+      "case": "manual_review",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true
+      },
+      "expected_status": "needs_confirmation",
+      "actual_status": "needs_confirmation",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-run-02/manual_review"
+    },
+    {
+      "case": "changed_occupancy",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true,
+        "observed_conflict_then_requery": true,
+        "changed_saved_slot": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-run-02/changed_occupancy"
+    }
+  ]
+}

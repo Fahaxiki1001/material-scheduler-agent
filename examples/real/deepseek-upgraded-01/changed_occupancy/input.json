@@ -1,0 +1,13 @@
+{
+  "request_id": "eval-changed_occupancy",
+  "material_id": "M01",
+  "channel": "douyin",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "time_constraint": "flexible",
+  "allowed_window": {
+    "start": "2026-10-29T19:00:00+08:00",
+    "end": "2026-10-29T20:30:00+08:00"
+  },
+  "approved_alternative": null,
+  "human_review_approved": false
+}

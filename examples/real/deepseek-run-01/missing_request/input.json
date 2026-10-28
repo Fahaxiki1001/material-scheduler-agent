@@ -1,0 +1,10 @@
+{
+  "request_id": "eval-missing_request",
+  "material_id": "M01",
+  "channel": "douyin",
+  "requested_start": null,
+  "time_constraint": "hard",
+  "allowed_window": null,
+  "approved_alternative": null,
+  "human_review_approved": false
+}

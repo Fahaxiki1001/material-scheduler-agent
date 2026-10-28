@@ -1,0 +1,10 @@
+{
+  "request_id": "eval-manual_review",
+  "material_id": "M04",
+  "channel": "douyin",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "time_constraint": "hard",
+  "allowed_window": null,
+  "approved_alternative": null,
+  "human_review_approved": false
+}

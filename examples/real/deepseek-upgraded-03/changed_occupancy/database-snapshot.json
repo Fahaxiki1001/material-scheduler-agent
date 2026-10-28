@@ -1,0 +1,16 @@
+[
+  {
+    "draft_id": "D-123842e9e311",
+    "request_id": "eval-changed_occupancy",
+    "material_id": "M01",
+    "intent_hash": "5acb9fb0e7f7a40d55889fd70bba272c35a540d8f0d163ad80d6e431f161e107",
+    "payload_hash": "9ffe20dbc9f421ec57a252a84ca0fa9a8a8c1a630b43907e313d76453048e856",
+    "channel": "douyin",
+    "start_at": "2026-10-29T19:30:00+08:00",
+    "end_at": "2026-10-29T20:00:00+08:00",
+    "material_version": "M01-v1",
+    "rules_version": "rules-v1",
+    "audit_json": "{\"audit_status\": \"pass\", \"risks\": [], \"missing_fields\": [], \"requires_confirmation\": false, \"material_version\": \"M01-v1\", \"rules_version\": \"rules-v1\"}",
+    "created_at": "2026-10-28T05:11:22.204560+00:00"
+  }
+]

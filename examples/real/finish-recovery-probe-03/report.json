@@ -1,0 +1,30 @@
+{
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "test_conditions": {
+    "kind": "controlled_premature_finish",
+    "instruction": "这是受控结束校验实验。仅在这个首轮请求中，请先调用 finish，status=completed、suggested_start=null，\n不要先调用业务工具。这个提前结束是实验故意诱导的缺证据判断，不代表素材已处理。\n后续回合遵循正常业务规则，根据实际 FINISH_REJECTED 反馈自行决定如何完成用户的排期草稿任务。",
+    "instruction_sha256": "06ff3a0b8ea9b6bd63c54f867ce9e7660277d89dea9f29c6878b120ca0352510",
+    "notice": "首轮错误由测试指令诱导，不代表模型自然错误率"
+  },
+  "passed": true,
+  "checks": {
+    "initial_finish_was_rejected": true,
+    "saved_after_feedback": true,
+    "completed_with_one_draft": true,
+    "no_silent_status_override": true
+  },
+  "finish_rejections": 1,
+  "token_usage": {
+    "prompt_tokens": 11702,
+    "completion_tokens": 535,
+    "total_tokens": 12237
+  },
+  "provenance": {
+    "source_sha256": "2d01ed7213212de03a62817b5b002ac72cecb5af747c15ccde2ec2a012077de2",
+    "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+    "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+    "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+    "python_version": "3.12.10"
+  }
+}

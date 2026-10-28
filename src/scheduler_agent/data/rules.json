@@ -1,0 +1,12 @@
+{
+  "version": "rules-v1",
+  "required_fields": ["title", "channel", "rights_status", "review_status"],
+  "allowed_values": {"rights_status": ["valid", "expired", "unknown"], "review_status": ["approved", "rejected", "manual"]},
+  "blocked": [
+    {"id": "R01", "field": "rights_status", "equals": "expired", "reason": "素材授权已经到期，禁止排期"},
+    {"id": "R02", "field": "review_status", "equals": "rejected", "reason": "素材审核未通过，禁止排期"}
+  ],
+  "confirmation": [
+    {"id": "R03", "field": "review_status", "equals": "manual", "reason": "需要用户确认人工复核已完成"}
+  ]
+}

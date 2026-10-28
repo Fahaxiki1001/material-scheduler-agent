@@ -1,0 +1,37 @@
+{
+  "version": "materials-v1",
+  "items": [
+    {
+      "id": "M01",
+      "version": "M01-v1",
+      "title": "字幕功能介绍",
+      "channel": "douyin",
+      "rights_status": "valid",
+      "review_status": "approved"
+    },
+    {
+      "id": "M02",
+      "version": "M02-v1",
+      "title": "授权信息待补充",
+      "channel": "douyin",
+      "rights_status": "unknown",
+      "review_status": "approved"
+    },
+    {
+      "id": "M03",
+      "version": "M03-v1",
+      "title": "授权已到期的活动素材",
+      "channel": "douyin",
+      "rights_status": "expired",
+      "review_status": "approved"
+    },
+    {
+      "id": "M04",
+      "version": "M04-v1",
+      "title": "需要人工复核的素材",
+      "channel": "douyin",
+      "rights_status": "valid",
+      "review_status": "manual"
+    }
+  ]
+}

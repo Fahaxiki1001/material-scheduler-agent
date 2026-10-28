@@ -1,0 +1,49 @@
+{
+  "task_status": "failed",
+  "reason": "SAVE_FAILED",
+  "message": "本次执行失败，请查看错误与保存状态。",
+  "material_id": "M01",
+  "request_id": "eval-save_failure",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": null,
+  "audit_status": "pass",
+  "risks": [],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "failed",
+  "save_error": {
+    "code": "SAVE_FAILED",
+    "message": "模拟写入后提交前故障，事务已回滚",
+    "retryable": false,
+    "details": {}
+  },
+  "draft_id": null,
+  "validation_scope": null,
+  "error": {
+    "code": "SAVE_FAILED",
+    "message": "模拟写入后提交前故障，事务已回滚",
+    "retryable": false,
+    "details": {}
+  },
+  "model_proposed_status": "failed",
+  "status_corrected": false,
+  "run_id": "796a340c033d48c583ad03e9ff846e94",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 5,
+  "tool_calls": 5,
+  "trace_path": "examples/real/deepseek-upgraded-02/save_failure/trace-1.jsonl",
+  "finish_rejections": 0,
+  "token_usage": {
+    "prompt_tokens": 8037,
+    "completion_tokens": 386,
+    "total_tokens": 8423
+  },
+  "provenance": {
+    "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+    "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+    "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+    "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+    "python_version": "3.12.10"
+  }
+}

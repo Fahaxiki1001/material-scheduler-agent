@@ -1,0 +1,30 @@
+{
+  "task_status": "failed",
+  "reason": "model_error",
+  "message": "本次执行失败，请查看错误与保存状态。",
+  "material_id": "M01",
+  "request_id": "eval-hard_conflict",
+  "requested_start": "2026-10-29T18:00:00+08:00",
+  "suggested_slot": null,
+  "audit_status": "unknown",
+  "risks": [],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "not_attempted",
+  "draft_id": null,
+  "validation_scope": null,
+  "error": {
+    "code": "MODEL_UNAVAILABLE_OR_INVALID_RESPONSE",
+    "message": "模型调用失败或返回格式无效；检查服务配置及工具调用支持",
+    "retryable": false,
+    "details": {}
+  },
+  "model_proposed_status": "incomplete",
+  "status_corrected": true,
+  "run_id": "250ad04477fb43f3b3dd5749805cc7cd",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 1,
+  "tool_calls": 0,
+  "trace_path": "examples/real/deepseek-run-01/hard_conflict/trace-1.jsonl"
+}

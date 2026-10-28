@@ -1,0 +1,45 @@
+{
+  "task_status": "blocked",
+  "reason": "rule_blocked",
+  "message": "当前约束或规则阻止排期。",
+  "material_id": "M03",
+  "request_id": "eval-blocked_rule",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": null,
+  "audit_status": "blocked",
+  "risks": [
+    {
+      "rule_id": "R01",
+      "reason": "素材授权已经到期，禁止排期",
+      "level": "blocked"
+    }
+  ],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "not_attempted",
+  "save_error": null,
+  "draft_id": null,
+  "validation_scope": null,
+  "error": null,
+  "model_proposed_status": "blocked",
+  "status_corrected": false,
+  "run_id": "3015de8f15994c27a2d164aa96489eb5",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 3,
+  "tool_calls": 3,
+  "trace_path": "examples/real/deepseek-upgraded-03/blocked_rule/trace-1.jsonl",
+  "finish_rejections": 0,
+  "token_usage": {
+    "prompt_tokens": 4305,
+    "completion_tokens": 202,
+    "total_tokens": 4507
+  },
+  "provenance": {
+    "source_sha256": "2d01ed7213212de03a62817b5b002ac72cecb5af747c15ccde2ec2a012077de2",
+    "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+    "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+    "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+    "python_version": "3.12.10"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task_status": "completed",
+  "reason": "draft_saved",
+  "message": "排期草稿已保存或已存在；未执行发布。",
+  "material_id": "M01",
+  "request_id": "eval-read_failure_recovery",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": {
+    "start": "2026-10-29T19:00:00+08:00",
+    "end": "2026-10-29T19:30:00+08:00"
+  },
+  "audit_status": "pass",
+  "risks": [],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "saved",
+  "draft_id": "D-d19c1e4baafb",
+  "validation_scope": "current_save",
+  "error": null,
+  "model_proposed_status": "completed",
+  "status_corrected": false,
+  "run_id": "80a387dd62b74b0bbb36dbcf1579fe05",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 6,
+  "tool_calls": 6,
+  "trace_path": "examples/real/deepseek-run-02/read_failure_recovery/trace-1.jsonl"
+}

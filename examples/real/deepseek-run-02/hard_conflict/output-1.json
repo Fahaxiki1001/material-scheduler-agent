@@ -1,0 +1,30 @@
+{
+  "task_status": "needs_confirmation",
+  "reason": "user_confirmation_required",
+  "message": "需要用户明确确认，尚未保存草稿。",
+  "material_id": "M01",
+  "request_id": "eval-hard_conflict",
+  "requested_start": "2026-10-29T18:00:00+08:00",
+  "suggested_slot": {
+    "start": "2026-10-29T18:30:00+08:00",
+    "end": "2026-10-29T19:00:00+08:00"
+  },
+  "audit_status": "pass",
+  "risks": [],
+  "missing_fields": [],
+  "pending_confirmations": [
+    "请确认是否将硬性时段调整为 2026-10-29T18:30:00+08:00"
+  ],
+  "save_status": "not_attempted",
+  "draft_id": null,
+  "validation_scope": null,
+  "error": null,
+  "model_proposed_status": "needs_confirmation",
+  "status_corrected": false,
+  "run_id": "60dbff28f79a4d0aad5663046c5dd269",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 5,
+  "tool_calls": 5,
+  "trace_path": "examples/real/deepseek-run-02/hard_conflict/trace-1.jsonl"
+}

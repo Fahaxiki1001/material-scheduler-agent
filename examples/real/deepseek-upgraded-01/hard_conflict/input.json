@@ -1,0 +1,10 @@
+{
+  "request_id": "eval-hard_conflict",
+  "material_id": "M01",
+  "channel": "douyin",
+  "requested_start": "2026-10-29T18:00:00+08:00",
+  "time_constraint": "hard",
+  "allowed_window": null,
+  "approved_alternative": null,
+  "human_review_approved": false
+}

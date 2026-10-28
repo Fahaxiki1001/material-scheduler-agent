@@ -1,0 +1,46 @@
+{
+  "task_status": "blocked",
+  "reason": "no_feasible_slot",
+  "message": "当前约束或规则阻止排期。",
+  "material_id": "M01",
+  "request_id": "eval-empty_candidate_window",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": null,
+  "audit_status": "pass",
+  "risks": [],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "not_attempted",
+  "save_error": null,
+  "draft_id": null,
+  "validation_scope": null,
+  "error": {
+    "code": "INVALID_SLOT",
+    "message": "首版只支持整点或半点开始的 30 分钟时段",
+    "retryable": false,
+    "details": {
+      "candidate_starts": []
+    }
+  },
+  "model_proposed_status": "blocked",
+  "status_corrected": false,
+  "run_id": "d8ceefe9869b41a78bef9fce9d20d77b",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 5,
+  "tool_calls": 5,
+  "trace_path": "examples/real/deepseek-upgraded-03/empty_candidate_window/trace-1.jsonl",
+  "finish_rejections": 1,
+  "token_usage": {
+    "prompt_tokens": 8190,
+    "completion_tokens": 408,
+    "total_tokens": 8598
+  },
+  "provenance": {
+    "source_sha256": "2d01ed7213212de03a62817b5b002ac72cecb5af747c15ccde2ec2a012077de2",
+    "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+    "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+    "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+    "python_version": "3.12.10"
+  }
+}

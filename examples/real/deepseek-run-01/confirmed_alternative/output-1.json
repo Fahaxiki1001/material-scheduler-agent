@@ -1,0 +1,28 @@
+{
+  "task_status": "completed",
+  "reason": "draft_saved",
+  "message": "排期草稿已保存或已存在；未执行发布。",
+  "material_id": "M01",
+  "request_id": "eval-confirmed_alternative",
+  "requested_start": "2026-10-29T18:00:00+08:00",
+  "suggested_slot": {
+    "start": "2026-10-29T19:00:00+08:00",
+    "end": "2026-10-29T19:30:00+08:00"
+  },
+  "audit_status": "pass",
+  "risks": [],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "saved",
+  "draft_id": "D-c501f0e42cb8",
+  "validation_scope": "current_save",
+  "error": null,
+  "model_proposed_status": "completed",
+  "status_corrected": false,
+  "run_id": "c893d527fb4d4a10add24ca41883b85e",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 5,
+  "tool_calls": 5,
+  "trace_path": "examples/real/deepseek-run-01/confirmed_alternative/trace-1.jsonl"
+}

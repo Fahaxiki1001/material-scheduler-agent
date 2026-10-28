@@ -1,0 +1,411 @@
+{
+  "generated_at": "2026-10-28T05:07:57.880675+00:00",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "notice": "真实模型实际运行结果",
+  "dataset_hash": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+  "total": 14,
+  "passed": 12,
+  "cases": [
+    {
+      "case": "normal",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true,
+        "saved_within_user_constraints": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-upgraded-02/normal",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 8090,
+        "completion_tokens": 367,
+        "total_tokens": 8457
+      }
+    },
+    {
+      "case": "missing_info",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "specific_missing_field": true
+      },
+      "expected_status": "needs_input",
+      "actual_status": "needs_input",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/missing_info",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 4281,
+        "completion_tokens": 201,
+        "total_tokens": 4482
+      }
+    },
+    {
+      "case": "blocked_rule",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "specific_risk_reason": true
+      },
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/blocked_rule",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 4305,
+        "completion_tokens": 202,
+        "total_tokens": 4507
+      }
+    },
+    {
+      "case": "hard_conflict",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "observed_conflict_then_requery": true,
+        "confirmation_details_present": true
+      },
+      "expected_status": "needs_confirmation",
+      "actual_status": "needs_confirmation",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/hard_conflict",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 8436,
+        "completion_tokens": 415,
+        "total_tokens": 8851
+      }
+    },
+    {
+      "case": "confirmed_alternative",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true,
+        "saved_within_user_constraints": true,
+        "confirmed_slot_matches": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-upgraded-02/confirmed_alternative",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 8295,
+        "completion_tokens": 392,
+        "total_tokens": 8687
+      }
+    },
+    {
+      "case": "duplicate",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true,
+        "saved_within_user_constraints": true,
+        "same_draft": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-upgraded-02/duplicate",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 14483,
+        "completion_tokens": 673,
+        "total_tokens": 15156
+      }
+    },
+    {
+      "case": "save_failure",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "explicit_save_failure": true,
+        "save_error_preserved": true
+      },
+      "expected_status": "failed",
+      "actual_status": "failed",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/save_failure",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 8037,
+        "completion_tokens": 386,
+        "total_tokens": 8423
+      }
+    },
+    {
+      "case": "read_failure_recovery",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true,
+        "saved_within_user_constraints": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-upgraded-02/read_failure_recovery",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 9974,
+        "completion_tokens": 431,
+        "total_tokens": 10405
+      }
+    },
+    {
+      "case": "step_limit",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true
+      },
+      "expected_status": "incomplete",
+      "actual_status": "incomplete",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/step_limit",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 2717,
+        "completion_tokens": 117,
+        "total_tokens": 2834
+      }
+    },
+    {
+      "case": "missing_request",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "specific_missing_field": true
+      },
+      "expected_status": "needs_input",
+      "actual_status": "needs_input",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/missing_request",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": null
+    },
+    {
+      "case": "manual_review",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "confirmation_details_present": true
+      },
+      "expected_status": "needs_confirmation",
+      "actual_status": "needs_confirmation",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/manual_review",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 4294,
+        "completion_tokens": 214,
+        "total_tokens": 4508
+      }
+    },
+    {
+      "case": "changed_occupancy",
+      "passed": false,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "saved_receipt": true,
+        "receipt_matches_database": true,
+        "saved_within_user_constraints": true,
+        "observed_conflict_then_requery": false,
+        "changed_saved_slot": true
+      },
+      "expected_status": "completed",
+      "actual_status": "completed",
+      "draft_count": 1,
+      "evidence": "examples/real/deepseek-upgraded-02/changed_occupancy",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "25dbca89df38b7d190233839a3e6d4dec54a619eb0afd1c89f2331174b536d9a",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 0,
+      "token_usage": {
+        "prompt_tokens": 8635,
+        "completion_tokens": 443,
+        "total_tokens": 9078
+      }
+    },
+    {
+      "case": "no_slot_in_window",
+      "passed": true,
+      "checks": {
+        "task_status": true,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "authorized_scope_exhausted": true,
+        "no_feasible_slot_reason": true
+      },
+      "expected_status": "blocked",
+      "actual_status": "blocked",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/no_slot_in_window",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "25dbca89df38b7d190233839a3e6d4dec54a619eb0afd1c89f2331174b536d9a",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 1,
+      "token_usage": {
+        "prompt_tokens": 8591,
+        "completion_tokens": 393,
+        "total_tokens": 8984
+      }
+    },
+    {
+      "case": "empty_candidate_window",
+      "passed": false,
+      "checks": {
+        "task_status": false,
+        "draft_count": true,
+        "model_status_supported": true,
+        "no_fake_receipt": true,
+        "authorized_scope_exhausted": true,
+        "no_feasible_slot_reason": false
+      },
+      "expected_status": "blocked",
+      "actual_status": "failed",
+      "draft_count": 0,
+      "evidence": "examples/real/deepseek-upgraded-02/empty_candidate_window",
+      "provenance": {
+        "source_sha256": "a09f777ffb5950eaad89f490561deb38555fd6d6539fcfee80053c53167ab71d",
+        "prompt_sha256": "eba9f20957dd9ec1ff4a3106312b1ae5cc24c4da5c91bf073b754b1d16442816",
+        "tools_sha256": "555262fd826448f3a32ccc0f1f0e7a9ccdd4e41ddac7db2c7a75cc8bcb966168",
+        "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+        "python_version": "3.12.10"
+      },
+      "finish_rejections": 1,
+      "token_usage": {
+        "prompt_tokens": 10217,
+        "completion_tokens": 486,
+        "total_tokens": 10703
+      }
+    }
+  ]
+}

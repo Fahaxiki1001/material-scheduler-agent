@@ -1,0 +1,33 @@
+{
+  "task_status": "needs_confirmation",
+  "reason": "user_confirmation_required",
+  "message": "需要用户明确确认，尚未保存草稿。",
+  "material_id": "M04",
+  "request_id": "eval-manual_review",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": null,
+  "audit_status": "warning",
+  "risks": [
+    {
+      "rule_id": "R03",
+      "reason": "需要用户确认人工复核已完成",
+      "level": "warning"
+    }
+  ],
+  "missing_fields": [],
+  "pending_confirmations": [
+    "请确认人工复核已完成"
+  ],
+  "save_status": "not_attempted",
+  "draft_id": null,
+  "validation_scope": null,
+  "error": null,
+  "model_proposed_status": "needs_confirmation",
+  "status_corrected": false,
+  "run_id": "e98e04c9f9c849b48cf66e19f4a55f17",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 3,
+  "tool_calls": 3,
+  "trace_path": "examples/real/deepseek-run-02/manual_review/trace-1.jsonl"
+}

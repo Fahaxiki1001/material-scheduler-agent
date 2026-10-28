@@ -1,0 +1,42 @@
+{
+  "task_status": "completed",
+  "reason": "draft_saved",
+  "message": "排期草稿已保存或已存在；未执行发布。",
+  "material_id": "M01",
+  "request_id": "eval-duplicate",
+  "requested_start": "2026-10-29T19:00:00+08:00",
+  "suggested_slot": {
+    "start": "2026-10-29T19:00:00+08:00",
+    "end": "2026-10-29T19:30:00+08:00"
+  },
+  "audit_status": "pass",
+  "risks": [],
+  "missing_fields": [],
+  "pending_confirmations": [],
+  "save_status": "saved",
+  "save_error": null,
+  "draft_id": "D-82eb90b3c702",
+  "validation_scope": "current_save",
+  "error": null,
+  "model_proposed_status": "completed",
+  "status_corrected": false,
+  "run_id": "19a72dea42ed42dfad465ca7df14efc3",
+  "model_mode": "real",
+  "model": "deepseek-flash",
+  "model_turns": 5,
+  "tool_calls": 5,
+  "trace_path": "examples/real/deepseek-upgraded-01/duplicate/trace-1.jsonl",
+  "finish_rejections": 0,
+  "token_usage": {
+    "prompt_tokens": 7839,
+    "completion_tokens": 379,
+    "total_tokens": 8218
+  },
+  "provenance": {
+    "source_sha256": "edf7907d209a10bdd833ab5fcff9d3b166c0ea1d3addfd4b57126124026854dd",
+    "prompt_sha256": "25d6051fad8d8ed6b2adc2df7b57e2f7395b10c5edc7d55245e8c2d43db8a677",
+    "tools_sha256": "76f5f6e60080b529c4e605740856605e76f4be78486103d9a8ece9294a5463ec",
+    "dataset_sha256": "16d19166cbf5af4f1e9ce9132883f2227ca0d0ab71d95520b9d631c14fb5a879",
+    "python_version": "3.12.10"
+  }
+}
